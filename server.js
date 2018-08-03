@@ -2,6 +2,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var session = require("express-session");
+var path = require("path");
 // Requiring passport as we've configured it
 var passport = require("./config/passport");
 
@@ -18,6 +19,13 @@ app.use(express.static("public"));
 app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
 app.use(passport.initialize());
 app.use(passport.session());
+
+
+// var isAuthenticated = require("./config/middleware/isAuthenticated.js");
+// app.get("/members", isAuthenticated, function(req, res) {
+//   // res.sendFile(path.join(__dirname, "../public/members.html"));
+//   res.sendFile(path.join(__dirname, "./client/build/index.html"));
+// });
 
 // Requiring our routes
 require("./routes/html-routes.js")(app);

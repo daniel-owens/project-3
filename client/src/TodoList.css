@@ -1,3 +1,7 @@
+.header {
+	margin-top: 20px;
+}
+
 .todoListMain .header input {
 	padding: 10px;
 	font-size: 16px;
@@ -29,6 +33,7 @@
 	border-radius: 5px;
 	list-style: none;
 	transition: background-color .2s ease-out;
+	width: 50%;
 }
 
 .todoListMain .theList li:hover {

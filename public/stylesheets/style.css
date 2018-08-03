@@ -1,4 +1,48 @@
+body {
+	background-color: #f9dca2;
+}	
+
+.navbar-default {
+	background-color: #66CCFF;
+	border: 2px solid #66CCFF;
+	padding: 30px;
+}
+
+.container {
+	margin-top: 100px;
+}
+
 form.signup,
 form.login {
-  margin-top: 50px;
+  margin-top: 30px;
+}
+
+.navbar-header {
+	font-size: 40px;
+}
+
+label {
+	margin-left: 5px;
+}
+
+.form-control {
+	border-radius: 15px;
+}
+
+.form-group {
+	font-size: 15px;
+}
+
+.btn-default {
+	background-color: #0066FF;
+	border: 2px solid #0066FF;;
+	cursor: pointer;
+	color: ivory;
+}
+
+.btn-default:hover {
+	background-color: #003399;
+	border: 2px solid #003399;
+	cursor: pointer;
+	color: orange;
 }
