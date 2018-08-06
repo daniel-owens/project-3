@@ -45,19 +45,20 @@ class TodoList extends Component {
 
 	render() {
 		return (
-			<div className="todoListMain">
-				  
+			<div className="todoListMain">  
 					<div className="header">
 						<form onSubmit={this.addItem}>
 							<input ref={(a) => this.inputElement = a}
 											placeholder="type here">
 							</input>
-							<button type="submit">add</button>
+							<button type="submit">Post</button>
 						</form>
 					</div>
-				<TodoItems entries={this.state.items}
-										delete={this.deleteItem}/>
+				  <TodoItems entries={this.state.items}
+									  delete={this.deleteItem}/>			  					  
 			</div>
+
+
 		);
 	}
 }
