@@ -1,82 +1,43 @@
 import React, { Component } from 'react';
-import Pdf from 'react-pdf-js';
+import "./LessonPlans.css";
 
 class LessonPlans extends Component {
-  state = { page: 1 };
+    
+    constructor(props) {
+        super(props);
 
-  onDocumentComplete = (pages) => {
-    this.setState({ page: 1, pages });
-  }
-
-  handlePrevious = () => {
-    this.setState({ page: this.state.page - 1 });
-  }
-
-  handleNext = () => {
-    this.setState({ page: this.state.page + 1 });
-  }
-
-  renderPagination = (page, pages) => {
-    let previousButton = (
-      <li className="previous">
-        <button onClick={this.handlePrevious} className="btn btn-link">
-          Previous
-        </button>
-      </li>
-    );
-    if (page === 1) {
-      previousButton = (
-        <li className="previous disabled">
-          <button className="btn btn-link">
-            Previous
-          </button>
-        </li>
-      );
+        this.state = {};
     }
-    let nextButton = (
-      <li className="next">
-        <button onClick={this.handleNext} className="btn btn-link">
-          Next
-        </button>
-      </li>
-    );
-    if (page === pages) {
-      nextButton = (
-        <li className="next disabled">
-          <button className="btn btn-link">
-            Next
-          </button>
-        </li>
-      );
-    }
-    return (
-      <nav>
-        <ul className="pager">
-          {previousButton}
-          {nextButton}
-        </ul>
-      </nav>
-    );
-  }
 
-  render () {
-    let pagination = null;
-    if (this.state.pages) {
-      pagination = this.renderPagination(this.state.page, this.state.pages);
+    render() {
+        return (
+          <div className={"sidenav"}>
+            <div className={"lesson-plan-container"}>
+               <h2 className={"lesson-header"}>LESSON PLANS</h2>
+               <hr></hr>
+                <div id={"lesson-plan-pdfs"}>
+                  <a href={"images/crlp.pdf"} target="_blank">CULTURALLY RELEVANT LESSON PLAN
+                    <div className="crlp">
+                      <img src={"images/lesson-plan.jpg"} />
+                    </div>  
+                  </a>
+                </div>
+                <hr></hr>
+                <div id={"lesson-plan-pdfs"}>
+                  <a href={"images/3-4-3-lessonplan.pdf"} target="_blank">3-4-3 LESSON PLAN
+                    <div className="three-four-three">
+                      <img src={"images/lesson-plan1.jpg"} />
+                    </div>  
+                  </a>
+                </div>
+            </div>
+          </div>  
+        );
     }
-    return (
-      <div>
-        <Pdf file="../public/images/crlp.pdf" onDocumentComplete={this.onDocumentComplete} page={this.state.page} />
-        {pagination}
-      </div>
-    );
-  }
 }
 
 export default LessonPlans;
 
 
 
-
-
-
+  

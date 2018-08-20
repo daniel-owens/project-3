@@ -57,8 +57,6 @@ class TodoList extends Component {
 				  <TodoItems entries={this.state.items}
 									  delete={this.deleteItem}/>			  					  
 			</div>
-
-
 		);
 	}
 }

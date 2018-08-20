@@ -33,7 +33,7 @@
 	border-radius: 5px;
 	list-style: none;
 	transition: background-color .2s ease-out;
-	width: 50%;
+	width: 33%;
 }
 
 .todoListMain .theList li:hover {

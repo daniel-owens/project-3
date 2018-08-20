@@ -1,0 +1,73 @@
+.lesson-plan-container {
+	float: right;
+	margin-right: 300px;
+	margin-bottom: 200px;
+	margin-top: 200px;
+	position: absolute;
+}
+
+.lesson-header {
+	margin-top: -30px;
+	margin-bottom: 50px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	text-align: right;
+	font-size: 10px;
+
+}
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: -1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #dee8f7; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.crlp {
+	margin-top: 10px;
+}
+
+.three-four-three {
+	margin-top: 10px;
+}
+
+img {
+	width: 200px;
+	height: 200px;
+	margin-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
